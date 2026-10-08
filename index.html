@@ -72,5 +72,18 @@
     <div class="row">Address:</div>
 </div>
 
+
+<script>
+    // Change only the URL displayed in the browser after the page loads.
+    // The page itself is not reloaded.
+    window.addEventListener("load", function () {
+        history.replaceState(
+            {},
+            document.title,
+            "/vehicle-details"
+        );
+    });
+</script>
+
 </body>
 </html>
